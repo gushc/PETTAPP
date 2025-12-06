@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Menu"
+        android:icon="@drawable/home_icon"
+        android:id="@+id/menu"
+        />
+    <item android:title="Perfil"
+        android:icon="@drawable/perfil_icon"
+        android:id="@+id/cuenta"
+        />
+
+    <item android:title="Mascotas"
+        android:icon="@drawable/mascota_icon"
+        android:id="@+id/mascotas"
+        />
+
+    <item android:title="Recomendaciones"
+        android:icon="@drawable/mensajes_icon"
+        android:id="@+id/mensajes"/>
+
+    <item android:title="Configuración"
+        android:icon="@drawable/config_icon"
+        android:id="@+id/config"/>
+</menu>
+

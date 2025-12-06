@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Mascota.ConsultarMascotaFragment"
+    android:background="@color/white">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="start"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Consultar Mascota"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="15dp"
+                android:src="@drawable/baseline_person_add_24"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:orientation="vertical">
+
+                <!-- LÍNEA SEPARADORA -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorbase" /> <!-- Aquí usa el color azul de tu app -->
+
+                    <!-- Tarjeta para agregar mascota -->
+                    <LinearLayout
+                        android:id="@+id/btnAgregarMascota"
+                        android:layout_width="380dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_height="150dp"
+                        android:layout_marginTop="15dp"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:background="@drawable/button_border"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_marginTop="0dp"
+                            android:layout_height="100dp"
+                            android:background="@drawable/ic_agregar"
+                            android:textColor="@color/white"
+                            android:textSize="80sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/TxtAgregarMascota"
+                            android:textStyle="bold"
+                            android:textSize="17sp"
+                            android:textColor="@color/colorbase" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="10dp"
+                        android:paddingVertical="10dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginEnd="10dp"
+                            android:text="Mis Mascotas"
+                            android:textColor="@color/colorbase"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rvMisMascotas"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clipToPadding="false"
+                            android:paddingBottom="10dp"
+                            android:layout_marginTop="10dp"/>
+
+                        <!-- LÍNEA SEPARADORA -->
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="4dp"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/colorbase" /> <!-- Aquí usa el color azul de tu app -->
+
+                    </LinearLayout>
+
+                <!-- CONTROLES DE ORDEN Y CANTIDAD -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:layout_marginTop="-7dp">
+
+                    <!-- Botón Ordenar -->
+                    <Button
+                        android:id="@+id/btnOrdenarAlfabeticamente"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:text="Ordenar A-Z"
+                        android:textSize="14sp"
+                        android:backgroundTint="@color/colorbase"
+                        android:textColor="@color/white"
+                        android:paddingHorizontal="10dp"
+                        android:layout_marginEnd="10dp"/>
+
+                    <!-- Spinner para elegir cantidad -->
+                    <Spinner
+                        android:id="@+id/spCantidadMascotas"
+                        android:layout_width="98dp"
+                        android:layout_height="32dp"
+                        android:background="@drawable/button_border"
+                        android:textSize="14sp"
+                        android:backgroundTint="@color/colorbase"
+                        android:paddingHorizontal="10dp"
+                        android:entries="@array/cantidades_mascotas"
+                        android:layout_marginStart="170dp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</androidx.core.widget.NestedScrollView>

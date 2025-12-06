@@ -1,0 +1,157 @@
+<resources>
+    <string name="app_name">BarberShopNv1</string>
+    <!--S-->
+    <string name="logTxtCorreo">Correo</string>
+    <string name="logTxtClave">Contraseña</string>
+    <string name="LogTxtPregunta">¿Aún no estas Registrado?</string>
+    <string name="LogTxtCopy">Derechos Reservados</string>
+
+
+    <!-- Apartados de Opciones de Servicio -->
+    <!-- CorteDeCabello -->
+    <string name="cortedeCab">Corte de Cabello</string>
+    <string name="cc_prime">Corte de Cabello</string>
+    <string name="cc_primed">Despierta tu nuevo look, con los mejores cuidados, Registra tu cita YA!</string>
+    <string name="cc_1">Low Fade</string>
+    <string name="cc_1d">Corte con desvanecido bajo que crea un efecto suave y elegante.</string>
+    <string name="cc_2">Mid Fade </string>
+    <string name="cc_2d">Un look moderno, destaca en la parte superior y los lados. </string>
+    <string name="cc_3">Degradado Basico</string>
+    <string name="cc_3d">Aporta un estilo fresco y limpio, ideal para toda ocasión.</string>
+    <string name="cc_4">Corte Clasico</string>
+    <string name="cc_4d">Estilo atemporal con líneas limpias y bien definidas.</string>
+    <!-- Afeitado -->
+    <string name="afeita">Afeitado</string>
+    <string name="af_prime">Afeitado</string>
+    <string name="af_primed">Luce impecable con un afeitado profesional. ¡Reserva tu cita ahora!</string>
+    <string name="af_1">Afeitado Clasico</string>
+    <string name="af_1d">Afeitado Clasico con navaja para un acabado impecable.</string>
+    <string name="af_2">Perfilado de barba</string>
+    <string name="af_2d">Definición precisa para una barba estilizada y bien cuidada.</string>
+    <string name="af_3">Afeitado Moderno</string>
+    <string name="af_3d">Afeitado rápido y preciso con máquina para un look fresco.</string>
+    <string name="af_4">Afeitado Premium</string>
+    <string name="af_4d">Recorte y cuidado de barba para un estilo definido y pulido.</string>
+    <!-- ServicioDeColor -->
+    <string name="serviColor">Servicio de Color</string>
+    <string name="sc_prime">Servicio de Color</string>
+    <string name="sc_primed">Despierta tu nuevo look con los mejores cuidados. ¡Registra tu cita YA!</string>
+    <string name="sc_1">Coloración completa</string>
+    <string name="sc_1d">Coloración completa personalizada para transformar tu look.</string>
+    <string name="sc_2">Mechas o reflejos</string>
+    <string name="sc_2d">Tinte en mechas para dar luz y dimensión a tu cabello.</string>
+    <string name="sc_3">Corrección de color</string>
+    <string name="sc_3d">Corrección de color para restaurar el tono de tu cabello.</string>
+    <string name="sc_4">Barba y bigote</string>
+    <string name="sc_4d">Tinte para barba y bigote para un look uniforme y definido.</string>
+    <!-- CuidadoFacial -->
+    <string name="cuidadoFaci">Cuidado Facial</string>
+    <string name="cf_prime">Cuidado Facial</string>
+    <string name="cf_primed">Renueva tu piel y siéntete radiante ¡Agenda tu cita hoy mismo!</string>
+    <string name="cf_1">Limpieza facial</string>
+    <string name="cf_1d">Limpieza profunda para una piel fresca y renovada.</string>
+    <string name="cf_2">Masaje Facial</string>
+    <string name="cf_2d">Relajante masaje facial para mejorar la circulación.</string>
+    <string name="cf_3">Afeitado con espuma</string>
+    <string name="cf_3d">Afeitado clásico con espuma para una piel sin irritación.</string>
+    <string name="cf_4">Cuidado de ojeras</string>
+    <string name="cf_4d">Tratamiento revitalizante para reducir bolsas y ojeras.</string>
+
+
+    <string name="TxtNombres">Nombre</string>
+    <string name="TxtApellidos">Apellido</string>
+    <string name="TxtCelular">Celular</string>
+    <string name="TxtEdad">Edad</string>
+    <string name="TxtGenero">Género</string>
+    <string name="TxtCorreo">Correo</string>
+    <string name="TxtContraseña">Contraseña</string>
+    <string name="TxtConfirmar">Confirmar Contraseña</string>
+
+    <!--R y G-->
+    <string name="regTxtRegistrate">Crear Cuenta</string>
+    <string name="rygTxtNombre">Ingresar Nombre </string>
+    <string name="rygTxtApellido">Ingresar Apellido </string>
+    <string name="rygTxtCelular">Ingresar tu número de celular</string>
+    <string name="rygTxtEdad">Ingresa tu edad</string>
+    <string name="rygTxtGenero">Ingresar genero</string>
+    <string name="rygTxtCorreo">Ingresa tu correo</string>
+    <string name="rygTxtContraseña">Ingresa tu contraseña</string>
+    <string name="rygTxtConfirma">Confirma tu contraseña</string>
+
+    <!--TG INFO REGISTRO MASCOTA   -->
+    <string name="TxtFotoRegistroMascota">Foto de la mascota</string>
+    <string name="TxtNombreMascota">Nombre de la Mascota</string>
+    <string name="TxtEspecie">Especie</string>
+    <string name="TxtRaza">Raza</string>
+    <string name="TxtGeneroMascota">Sexo</string>
+    <string name="TxtEdadMascota">Edad</string>
+    <string name="TxtColorMascota">Color</string>
+    <string name="TxtBoletinVacuna">Boletín de vacunación</string>
+
+    <!--TG INFO ARRAY ITEM CONSULTAR MASCOTA   -->
+
+    <string-array name="cantidades_mascotas">
+        <item>1</item>
+        <item>10</item>
+        <item>20</item>
+        <item>50</item>
+        <item>100</item>
+        <item>Todas</item>
+    </string-array>
+
+    <!--TG INFO CONSULTAR MASCOTA   -->
+    <string name="TxtAgregarMascota">Agrega una nueva mascota</string>
+    <!--string name="TxtNombreMascota">Nombre de la Mascota</string>
+    <string name="TxtEspecie">Especie</string>
+    <string name="TxtRaza">Raza</string>
+    <string name="TxtGeneroMascota">Sexo</string>
+    <string name="TxtEdadMascota">Edad</string>
+    <string name="TxtColorMascota">Color</string>
+    <string name="TxtBoletinVacuna">Boletín de vacunación</string>-->
+
+    <!--R y G-->
+    <string name="rygTxtNombreMascota">Ingresar nombre de la mascota</string>
+    <string name="rygTxtEspecie">Ingresar especie</string>
+    <string name="rygTxtRaza">Ingresar raza</string>
+    <string name="rygTxtGeneroMascota">Ingresar el sexo de tu mascota</string>
+    <string name="rygTxtEdadMascota">Ingresar edad aproximada</string>
+    <string name="rygTxtColorMascota">Ingresa el color de tu mascota</string>
+    <string name="rygTxtBoletinVacuna">Adjuntar imagen de vacunación</string>
+    <string name="BtnRegresar">Regresar</string>
+    <string name="BtnSalir">Salir</string>
+    <string name="BtnRegistrarMascota">Registrar</string>
+
+
+    <!--Botones-->
+    <string name="BtnIngresar">Iniciar Sesión</string>
+    <string name="BtnRegistrar">Registrate!</string>
+    <string name="ChkSesionRecordar">Recordar Contraseña</string>
+
+
+    <!--registro-->
+    <string name="regTxtNombre">Ingresa tu nombre</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!--fragment cita-->
+
+
+    <!--fragment Fecha-->
+    <string name="textViewTituloFechaDescFrag">Selecciona la Fecha que más se te acomode</string>
+
+    <!--fragment detalle-->
+
+
+    <!-- **IMPORTANTE** Asegúrate que este valor sea el ID de Cliente Web de tu Firebase (el que termina en .apps.googleusercontent.com) -->
+    <string name="default_web_client_id">660618922774-2o4l7cvvp7aqjtqkbmkhpijagscef9if.apps.googleusercontent.com</string>
+
+    <string name="service_image">Imagen del servicio</string>
+    <string name="regBtnNoBinario">No Binario</string>
+    <string name="regBtnMasculino">Masculino</string>
+    <string name="regBtnFemenino">Femenino</string>
+    <string name="TxtAgregarRecomendacion">Agrega Una Recomendacion</string>
+    <string name="TxtMisRecomendaciones">Mis Recomendaciones</string>
+    <string name="TxtVerMisRecomendaciones">Ver mis recomendaciones</string>
+    <string name="TxtOtrasRecomendaciones">Otras Recomendaciones</string>
+
+
+</resources>

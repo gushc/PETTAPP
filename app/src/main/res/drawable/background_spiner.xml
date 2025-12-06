@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/drawable/spinner_background.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Fondo personalizado -->
+    <item>
+        <shape>
+            <solid android:color="@android:color/transparent"/>
+            <!-- Aquí puedes referenciar tu drawable personalizado -->
+            <corners android:radius="15dp"/>
+            <stroke android:width="2dp" android:color="@color/c900"/>
+        </shape>
+    </item>
+
+    <!-- Flecha de desplegable del Spinner -->
+    <item android:right="16dp">
+        <bitmap
+            android:gravity="right|center_vertical"
+            android:src="@android:drawable/arrow_down_float" />
+    </item>
+</layer-list>

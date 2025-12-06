@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginTop="10dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="6dp"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:padding="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <!--
+           ⚠️ CAMBIO AQUÍ:
+           1. Quité 'app:tint' (para que se vean los colores de la foto).
+           2. Agregué 'scaleType="centerCrop"' (para que la foto llene el círculo/cuadrado).
+        -->
+        <ImageView
+            android:id="@+id/imgMascotaItem"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_agregar"
+            android:scaleType="centerCrop" />
+
+        <!-- NOMBRE Y ESPECIE -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_marginStart="12dp">
+
+            <TextView
+                android:id="@+id/TxtNombreMascotaItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dog"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/TxtRazaItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Raza"
+                android:textColor="#9E9E9E"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+        <!-- BOTÓN DE VER DETALLES DE ANIMAL -->
+        <ImageView
+            android:id="@+id/btnDetallesMascota"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/baseline_ver_24"
+            android:layout_marginStart="10dp"
+            app:tint="@color/colorbase"
+            android:padding="5dp"/>
+
+        <!-- BOTÓN DE EDITAR -->
+        <ImageView
+            android:id="@+id/btnEditarMascota"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/edit_icon_24"
+            app:tint="@color/colorbase"
+            android:padding="5dp"/>
+
+        <!-- BOTÓN DE ELIMINAR -->
+        <ImageView
+            android:id="@+id/btnEliminarMascota"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/delete_icon_24"
+            app:tint="@color/colorbase"
+            android:padding="5dp"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F0F2F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:elevation="4dp"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="12dp"
+                android:src="@drawable/logoinicio1" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="PetApp"
+                android:textColor="#1976D2"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/icon_search_button"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/ic_search"
+                app:tint="#666666"/>
+
+            <ImageView
+                android:id="@+id/icon_notificaciones_button"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginEnd="16dp"
+                android:src="@android:drawable/ic_popup_reminder"
+                app:tint="#666666" />
+
+            <ImageView
+                android:id="@+id/icon_mensajes_button"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@android:drawable/ic_dialog_email"
+                app:tint="#666666" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshFeed"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@android:color/white"
+                    android:elevation="2dp"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Crear Publicación"
+                        android:textSize="18sp"
+                        android:textColor="#1976D2"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="10dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginBottom="10dp">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            app:cardCornerRadius="20dp"
+                            app:cardElevation="0dp"
+                            android:layout_marginEnd="10dp">
+                            <ImageView
+                                android:id="@+id/imgAvatarCrear"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@android:drawable/sym_def_app_icon"
+                                android:scaleType="centerCrop"/>
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:id="@+id/txtNombreMascotaCrear"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Tu Mascota"
+                            android:textStyle="bold"
+                            android:textColor="#000000"/>
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/edtDescripcionCrear"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="¿Qué quieres compartir?"
+                        android:minHeight="80dp"
+                        android:gravity="top|start"
+                        android:inputType="textMultiLine|textCapSentences"
+                        android:background="@android:drawable/edit_text"/>
+
+                    <ImageView
+                        android:id="@+id/imgPreviewCrear"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="10dp"
+                        android:scaleType="centerCrop"
+                        android:visibility="gone"
+                        android:background="#E0E0E0"
+                        android:src="@android:drawable/ic_menu_gallery"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="end"
+                        android:layout_marginTop="10dp">
+
+                        <Button
+                            android:id="@+id/btnAdjuntarFoto"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:text="📷 Foto"
+                            android:backgroundTint="#1976D2"
+                            android:textColor="#FFFFFF"
+                            android:layout_marginEnd="10dp"/>
+
+                        <Button
+                            android:id="@+id/btnPublicarAhora"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:text="Publicar"
+                            android:backgroundTint="#1976D2"
+                            android:textColor="#FFFFFF"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerFeed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false"
+                    android:paddingTop="4dp"
+                    android:clipToPadding="false"/>
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</LinearLayout>

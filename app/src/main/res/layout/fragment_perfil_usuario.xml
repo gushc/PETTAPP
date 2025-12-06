@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_titulo_perfil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Perfil de Mascota"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="#1976D2"
+            android:textColor="#FFFFFF"
+            android:padding="20dp"
+            android:elevation="4dp" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="#FFFFFF">
+
+            <ImageView
+                android:id="@+id/imgEncabezado"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:scaleType="centerCrop"
+                android:src="@android:drawable/dark_header"
+                android:background="#CCCCCC"/>
+
+            <ImageView
+                android:id="@+id/imgFotoPerfil"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="-60dp"
+                android:scaleType="centerCrop"
+                android:elevation="8dp"
+                android:src="@android:drawable/sym_def_app_icon"
+                android:background="@drawable/ic_launcher_background"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@android:color/white"
+            android:elevation="4dp"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Información de la Mascota"
+                android:textColor="#1976D2"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="16dp"/>
+
+            <EditText
+                android:id="@+id/regTxtNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nombre"
+                android:focusable="false"
+                android:longClickable="false"
+                android:cursorVisible="false"
+                android:minHeight="48dp"
+                android:layout_marginBottom="10dp"/>
+
+            <EditText
+                android:id="@+id/regTxtEspecie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Especie"
+                android:focusable="false"
+                android:longClickable="false"
+                android:cursorVisible="false"
+                android:minHeight="48dp"
+                android:layout_marginBottom="10dp"/>
+
+            <EditText
+                android:id="@+id/regTxtRaza"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Raza"
+                android:focusable="false"
+                android:longClickable="false"
+                android:cursorVisible="false"
+                android:minHeight="48dp"
+                android:layout_marginBottom="10dp"/>
+
+            <EditText
+                android:id="@+id/regTxtSexo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Sexo"
+                android:focusable="false"
+                android:longClickable="false"
+                android:cursorVisible="false"
+                android:minHeight="48dp"
+                android:layout_marginBottom="10dp"/>
+
+            <EditText
+                android:id="@+id/regTxtEdad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Edad"
+                android:focusable="false"
+                android:longClickable="false"
+                android:cursorVisible="false"
+                android:minHeight="48dp"
+                android:layout_marginBottom="10dp"/>
+
+            <EditText
+                android:id="@+id/regTxtColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Color"
+                android:focusable="false"
+                android:longClickable="false"
+                android:cursorVisible="false"
+                android:minHeight="48dp"
+                android:layout_marginBottom="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@android:color/white"
+            android:elevation="4dp"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Crear Publicación"
+                android:textSize="18sp"
+                android:textColor="#1976D2"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="10dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:cardCornerRadius="20dp"
+                    android:layout_marginEnd="10dp">
+                    <ImageView
+                        android:id="@+id/imgAvatarPublicacion"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@android:drawable/sym_def_app_icon"
+                        android:scaleType="centerCrop"/>
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/txtNombreMascotaPublicando"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nombre Mascota"
+                    android:textStyle="bold"
+                    android:textColor="#000000"/>
+            </LinearLayout>
+            <EditText
+                android:id="@+id/editTextoPublicacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="¿Qué quieres compartir?"
+                android:minHeight="80dp"
+                android:gravity="top|start"
+                android:inputType="textMultiLine|textCapSentences"
+                android:background="@android:drawable/edit_text"/>
+
+            <ImageView
+                android:id="@+id/imgPreviewPublicacion"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="10dp"
+                android:scaleType="centerCrop"
+                android:visibility="gone"
+                android:background="#E0E0E0"
+                android:src="@android:drawable/ic_menu_gallery"/>
+
+            <Button
+                android:id="@+id/btnPublicarFoto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="📷 Adjuntar Foto"
+                android:backgroundTint="#1976D2"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="10dp"/>
+
+            <Button
+                android:id="@+id/btnPublicar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Publicar"
+                android:backgroundTint="#1976D2"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="5dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@android:color/white">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tab_mis_publicaciones"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Mis Publicaciones"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:textStyle="bold"
+                    android:textColor="#1976D2"/>
+                <TextView
+                    android:id="@+id/tab_publicaciones_compartidas"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Compartidas"
+                    android:gravity="center"
+                    android:padding="16dp"/>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/tab_indicator"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="#1976D2"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/layout_mis_publicaciones"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recycler_mis_publicaciones"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:nestedScrollingEnabled="false"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_publicaciones_compartidas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recycler_publicaciones_compartidas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:nestedScrollingEnabled="false"/>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

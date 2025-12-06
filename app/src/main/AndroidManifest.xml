@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.animals">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logoinicio1"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logoinicio2"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Animals"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".recomendaciones.EditarRecomendacionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".recomendaciones.DetalleRecomendacionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".actividades.MapaPickerActivity"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBmRBUlCJhEnqfCtT-SeZE8bzhOw61P_so" />
+
+        <activity
+            android:name=".BuscadorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".actividades.bottom_sheet_comentariosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".actividades.PrivacidadActivity"
+            android:exported="false" />
+        <activity
+            android:name=".actividades.NotificacionActivity"
+            android:exported="false" />
+        <activity android:name=".actividades.BienvenidaActivity" />
+        <activity
+            android:name=".actividades.RegistroActivity"
+            android:exported="false" />
+        <activity
+            android:name=".actividades.SesionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".actividades.InicioActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

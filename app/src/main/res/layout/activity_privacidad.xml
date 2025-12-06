@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:id="@+id/privacidad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Privacidad"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="#EDE7F6"
+            android:textColor="#673AB7"
+            android:padding="20dp" />
+
+        <!-- Agregar ID? android:id="@+id/btnPerfil"-->
+        <Button
+
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/background_list"
+            android:drawableStart="@drawable/perfil"
+            android:drawableTint="@color/c950"
+            android:paddingStart="16dp"
+            android:text="Cambiar Correo o numero de telefono"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <!-- Agregar ID? android:id="@+id/btnPerfil"-->
+        <Button
+
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/background_list"
+            android:drawableStart="@drawable/perfil"
+            android:drawableTint="@color/c950"
+            android:paddingStart="16dp"
+            android:text="Cambiar contraseña"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <!-- Agregar ID? android:id="@+id/btnPerfil"-->
+        <Button
+
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/background_list"
+            android:drawableStart="@drawable/perfil"
+            android:drawableTint="@color/c950"
+            android:paddingStart="16dp"
+            android:text="Eliminar Cuenta"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

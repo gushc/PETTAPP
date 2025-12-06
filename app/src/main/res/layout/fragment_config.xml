@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/nsvAjustes"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:id="@+id/llAjustes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Título -->
+        <TextView
+            android:id="@+id/tvTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ajustes"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="#EDE7F6"
+            android:textColor="#673AB7"
+            android:padding="20dp" />
+
+        <!-- Botón: Perfil -->
+        <Button
+            android:id="@+id/btnPerfil"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/background_list"
+            android:drawableStart="@drawable/perfil"
+            android:drawableTint="@color/c950"
+            android:paddingStart="16dp"
+            android:text="Perfil"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <!-- Botón: Notificaciones -->
+        <Button
+            android:id="@+id/btnNotificaciones"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/background_list"
+            android:drawableStart="@drawable/leon"
+            android:drawableTint="@color/c950"
+            android:paddingStart="16dp"
+            android:text="Notificaciones"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <!-- Botón: Privacidad -->
+        <Button
+            android:id="@+id/btnPrivacidad"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/background_list"
+            android:drawableStart="@drawable/baseline_lock_24"
+            android:drawableTint="@color/c950"
+            android:paddingStart="16dp"
+            android:text="Privacidad"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <!-- Línea: Modo oscuro / claro con switch -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#D1C4E9"
+            android:padding="16dp"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:id="@+id/tvModoOscuroClaro"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Modo oscuro / claro"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#311B92" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switchTema"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:scaleX="1.3"
+                android:scaleY="1.3" />
+        </LinearLayout>
+
+        <!-- Botón: Cerrar sesión -->
+        <Button
+            android:id="@+id/btnCerrarSesion"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/background_list"
+            android:drawableTint="@color/c950"
+            android:paddingStart="16dp"
+            android:text="Cerrar sesión"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
